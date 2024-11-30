@@ -48,7 +48,7 @@ const Portfolio = () => {
     </tr>
     <tr>
         <td>1</td>
-        <td>E Commerce Project-1</td>
+        <td>E Commerce Project</td>
         <td><a href='https://github.com/VERMAMANISHKUMAR/Ecommerc-project-Html-CSS-JavaScript/tree/main'>E Commerce Project GitHub link</a><i class="fa-solid fa-paperclip"></i></td>
         <td><a href='https://vermamanishkumar.github.io/Ecommerc-project-Html-CSS-JavaScript/'>E Commerce Project Live Project</a><i class="fa-solid fa-paperclip"></i></td>
     </tr>
