@@ -1,4 +1,21 @@
 /* Email component */
+/* heading */
+
+.heading {
+text-align: center;
+  margin-top: 80px;
+  margin-bottom: -7rem;
+}
+
+.heading>* {
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+
+.heading span:nth-of-type(2) {
+  color: var(--orange);
+}
 
 .contact-form {
           padding: 0 3rem;

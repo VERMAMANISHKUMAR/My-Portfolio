@@ -3,6 +3,7 @@ import './Navbar.css'
 import Toggle from '../Toggle/Toggle'
 import { Link } from 'react-scroll'
 
+
 const Navbar = () => {
   return (
     <div className='nav-wrapper'>
@@ -36,6 +37,11 @@ const Navbar = () => {
           <li>
             <Link spy={true} to='Testimonials' smooth={true}>
               Testimonials
+            </Link>
+          </li>
+          <li>
+            <Link spy={true} to='CoverLetter' smooth={true}>
+            CoverLetter
             </Link>
           </li>
         </ul>

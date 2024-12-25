@@ -48,7 +48,6 @@ const Testimonial = () => {
      <span>Clients always get </span>
      <span>Exceptinal Work </span>
      <span>from me...</span>
-    
      </div>
      {/* sliders */}
      <Swiper

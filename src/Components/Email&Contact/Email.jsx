@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './Email.css';
 import emailjs from '@emailjs/browser';
-
+import { QRCodeSVG } from "qrcode.react";
 const Email = () => {
   const form = useRef();
   const [toSend, setToSend] = useState({
@@ -27,7 +27,6 @@ const Email = () => {
         }
       );
   };
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setToSend((prevState) => ({
@@ -35,15 +34,31 @@ const Email = () => {
       [name]: value,
     }));
   };
-
+  const email = "manish.sviet02@gmail.com";
   return (
+    <>
+      {/* <div className='awesome'>
+          <span>Get in touch</span><span>Contact me</span>
+        </div> */}
+        <div className='heading'>
+        <span>Get in touch</span><span>Contact me</span>
+     </div>
     <div className='contact-form'>
       <div className='w-left'>
-        <div className='awesome'>
-          <span>Get in touch</span>
-          <span>Contact me</span>
-          {/* <div className='blur c-blur2' style={{ background: "skyblue" }}></div> */}
-        </div>
+        {/* <div className='awesome'>
+          <span>Get in touch</span><span>Contact me</span>
+        </div> */}
+        <div style={{ textAlign: "center", marginTop: "20px" }}>
+      {/* <h1>QR Code for Email</h1> */}
+      <QRCodeSVG
+        value={`mailto:${email}`}
+        size={200}
+        fgColor="#000000"
+        bgColor="#ffffff"
+        level="H"
+      />
+    </div>
+        
       </div>
 
       <div className='c-right'>
@@ -89,6 +104,7 @@ const Email = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

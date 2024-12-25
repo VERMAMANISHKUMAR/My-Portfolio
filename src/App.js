@@ -7,6 +7,7 @@ import Experience from './Components/Experience/Experience';
 import Works from './Components/Works/Works';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Testimonial from './Components/Testimonial/Testimonial';
+import CoverLetter from './Components/CoverLetter/CoverLetter';
 import Email from './Components/Email&Contact/Email';
 import Footer from './Components/Footer/Footer';
 import { themeContext } from './Context';
@@ -29,6 +30,7 @@ const darkMode=theme.state.darkMode;
     <Works/>
     <Portfolio/>
     <Testimonial/>
+    <CoverLetter/>
     <Email/>
     <Footer/>
     </div>
